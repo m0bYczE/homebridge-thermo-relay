@@ -1,0 +1,45 @@
+{
+	"bridge": {
+		"name": "Homebridge",
+		"username": "CC:22:3D:E3:CE:30",
+		"port": 51826,
+		"pin": "031-45-154"
+	},
+	"description": "",
+	"accessories": [],
+	"platforms": [{
+			"platform": "BelkinWeMo",
+			"name": "WeMo Platform"
+		},
+		{
+			"platform": "MultiZonePlatform",
+			"name": "MultiZone Platform",
+			"sensorCheckMilliseconds": 60000,
+			"temperatureDisplayUnits": 1,
+			"minOnOffTime": 300000,
+			"startDelay": 10000,
+			"serverPort": 3000,
+			"relayPins": [12,16,18],
+			"zones": {
+				"Přízemí" : {
+				      "relayPinTopeni" : 12,
+				      "relayPinKotel" : 18,
+				      "sensors" : {
+					"Kuchyň":{
+					    "source" : "Jablotron",
+					}
+				      }
+				  },
+				  "Patro" : {
+				      "relayPinTopeni" : 16,
+				      "relayPinKotel" : 18,
+				      "sensors" : {
+					"Ložnice":{
+					    "source" : "Jablotron",
+					}
+				      }
+				  }
+			}
+		}
+	]
+}

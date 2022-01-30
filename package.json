@@ -1,0 +1,29 @@
+{
+  "name": "homebridge-thermo",
+  "version": "1.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m0bYczE/homebridge-thermo.git"
+  },
+   "engines": {
+    "homebridge": ">=0.4.33",
+    "node": ">=6.12.2"
+  },
+  "keywords": [
+    "homebridge-plugin",
+    "thermostat",
+    "raspberry-pi",
+    "homebridge"
+  ],
+  "author": "m0bYczE",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/m0bYczE/homebridge-thermo/issues"
+  },
+  "homepage": "https://github.com/m0bYczE/homebridge-thermo#readme"
+}
